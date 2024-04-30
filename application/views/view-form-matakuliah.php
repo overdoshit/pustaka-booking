@@ -30,7 +30,7 @@
 					<th>Kode MTK</th>
 					<th>:</th>
 					<td>
-						<input type="text" name="kode" id="kode" value="<?= set_value('kode'); ?>"/>
+						<input type="text" name="kode" id="kode" value="<?= set_value('kode'); ?>" placeholder="e.g. WP2"/>
 					</td>
 				</tr>
 				<tr>
@@ -43,7 +43,7 @@
 					<th>Nama MTK</th>
 					<th>:</th>
 					<td>
-						<input type="text" name="nama" id="nama" value="<?= set_value('nama'); ?>"/>
+						<input type="text" name="nama" id="nama" value="<?= set_value('nama'); ?>" placeholder="e.g. Web Programming 2"/>
 					</td>
 				</tr>
 				<tr>
@@ -56,8 +56,8 @@
 					<th>SKS</th>
 					<th>:</th>
 					<td>
-						<select name="sks" id="sks">
-                            <option value=>Pilih SKS</option>
+						<select name="sks" id="sks" placeholder="test">
+                            <option>Pilih SKS</option>
                             <option value=1 <?= set_select('sks', 1); ?>>1</option>
                             <option value=2 <?= set_select('sks', 2); ?>>2</option>
                             <option value=3 <?= set_select('sks', 3); ?>>3</option>

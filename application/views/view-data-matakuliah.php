@@ -27,21 +27,21 @@
 			</tr>
 			<tr>
 				<th>Nama MTK</th>
-				<td>:</td>
+				<th>:</th>
 				<td>
 					<?= $nama; ?>
 				</td>
 			</tr>
 			<tr>
 				<th>SKS</th>
-				<td>:</td>
+				<th>:</th>
 				<td>
 					<?= $sks; ?>
 				</td>
 			</tr>
 			<tr>
 				<th>Status MTK</th>
-				<td>:</td>
+				<th>:</th>
 				<td>
 					<?= $status; ?>
 				</td>
