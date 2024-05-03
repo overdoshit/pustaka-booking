@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php $this->load->view('Web_new/head'); ?>
+    <?php $this->load->view('web_new/head'); ?>
 </head>
 <body>
     <div id="wrapper">
-        <?php $this->load->view('Web_new/menu'); ?>
+        <?php $this->load->view('web_new/menu'); ?>
         <section>
             <h1><?php echo $judul ?></h1>
             <h4>Social Media</h4>
@@ -27,7 +27,7 @@
             <p>Jl. Letnan Sutopo BSD Serpong Kec. Serpong,
                 <br>Kota Tangerang Selatan, Banten 15311</p>
         </section>
-        <?php $this->load->view('Web_new/footer'); ?>
+        <?php $this->load->view('web_new/footer'); ?>
     <div>
 </body>
 </html>

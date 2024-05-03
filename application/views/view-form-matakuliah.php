@@ -16,7 +16,7 @@
 
 <body>
 	<center>
-		<form action="<?= base_url('Matakuliah/cetak'); ?>" method="post">
+		<form action="<?= base_url('matakuliah/cetak'); ?>" method="post">
 			<table>
 				<tr>
 					<th colspan="3">Form Input Data Mata Kuliah</th>

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php $this->load->view('Web_new/head'); ?>
+    <?php $this->load->view('web_new/head'); ?>
 </head>
 <body>
     <div id="wrapper">
-        <?php $this->load->view('Web_new/menu'); ?>
+        <?php $this->load->view('web_new/menu'); ?>
         <section>
             <h1><?php echo $judul ?></h1>
             <img id=img src="<?php echo base_url() ?>assets/images/faiz.png" alt="Faiz">
@@ -29,7 +29,7 @@
                 <li>Bola</li>
             </ul>
         </section>
-        <?php $this->load->view('Web_new/footer'); ?>
+        <?php $this->load->view('web_new/footer'); ?>
     <div>
 </body>
 </html>

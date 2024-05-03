@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php $this->load->view('Web_new/head'); ?>
+    <?php $this->load->view('web_new/head'); ?>
 </head>
 <body>
     <div id="wrapper">
-        <?php $this->load->view('Web_new/menu'); ?>
+        <?php $this->load->view('web_new/menu'); ?>
         <section>
             <h1><?php echo $judul ?></h1>
             <p align="justify">Pada pengertian codeigniter di atas tadi di jelaskan bahwa codeigniter menggunakan metode MVC.
@@ -53,7 +53,7 @@
                     menjadi mudah dan pengembangan aplikasi dapat di lakukan dengan
                     cepat dan terstruktur.</p>
         </section>
-        <?php $this->load->view('Web_new/footer'); ?>
+        <?php $this->load->view('web_new/footer'); ?>
     <div>
 </body>
 </html>

@@ -5,9 +5,9 @@
     </hgroup>
     <nav>
         <ul>
-            <li><a href="<?php echo base_url()."Web_new" ?>">Home</a></li>
-            <li><a href="<?php echo base_url()."Web_new/about" ?>">About</a></li>
-            <li><a href="<?php echo base_url()."Web_new/contact" ?>">Hubungi Kami</a></li>
+            <li><a href="<?php echo base_url()."web_new" ?>">Home</a></li>
+            <li><a href="<?php echo base_url()."web_new/about" ?>">About</a></li>
+            <li><a href="<?php echo base_url()."web_new/contact" ?>">Hubungi Kami</a></li>
         </ul>
     </nav>
     <div class="clear"></div>
