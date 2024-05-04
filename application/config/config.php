@@ -24,11 +24,34 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 function get_base_url() {
-    if ($_SERVER['HTTP_HOST'] == 'localhost') {
-        return 'https://localhost/pustaka-booking-17210757';
-    } else {
-        return 'https://' . $_SERVER['HTTP_HOST'];
+    $protocol = (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https')
+                || (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
+                ? "https://" : "http://";
+
+    $host = $_SERVER['HTTP_HOST'];
+    $port = $_SERVER['SERVER_PORT'];
+    if ($port === false) {
+        $port = $_SERVER['SERVER_PORT'];
+        $hostNameOnly = $host;
     }
+
+    $hostNameOnly = parse_url('http://' . $host, PHP_URL_HOST);
+
+    if ($hostNameOnly == 'localhost') {
+        if ($port == 80 || $port == 443) { // Apache Laragon
+            return $protocol . $host . '/pustaka-booking-17210757';
+        } elseif ($port == 8080) {  // Apache Docker or PHP Docker
+            return $protocol . $host;
+        }
+    }
+
+	if ($hostNameOnly == '127.0.0.1') { // Cloud Shell
+        if (isset($_SERVER['HTTP_X_FORWARDED_HOST'])) {
+            return 'https://' . $_SERVER['HTTP_X_FORWARDED_HOST'];
+        }
+    }
+	// Cloud Run
+    return $protocol . $host;
 }
 
 $config['base_url'] = get_base_url();
