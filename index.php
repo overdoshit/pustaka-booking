@@ -38,6 +38,15 @@
 
 /*
  *---------------------------------------------------------------
+ * ENV
+ *---------------------------------------------------------------
+*/
+	require_once __DIR__ . '/vendor/autoload.php';
+	$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+	$dotenv->load();
+
+/*
+ *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
  *---------------------------------------------------------------
  *
@@ -53,7 +62,7 @@
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
-	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
+	define('ENVIRONMENT', isset($_ENV['ENVIRONMENT']) ? $_ENV['ENVIRONMENT'] : 'development');
 
 /*
  *---------------------------------------------------------------
@@ -306,8 +315,4 @@ switch (ENVIRONMENT)
  * And away we go...
  */
 
-ini_set('display_errors', 0);
-ini_set('display_startup_errors', 0);
-ini_set('log_errors', 1);
-error_reporting(E_ALL & ~E_DEPRECATED & ~E_STRICT);
 require_once BASEPATH.'core/CodeIgniter.php';
