@@ -9,6 +9,6 @@
 | MySQL       | [8.0.37](https://dev.mysql.com/downloads/mysql/8.0.html) |
 
 ## Pertemuan 1 - 5
-[Branch »](https://github.com/overdoshit/pustaka-booking-17210757/tree/1-5/)
+[Branch »](https://github.com/overdoshit/pustaka-booking/tree/1-5/)
 <br/>
 [Deploy »](https://pustaka-booking-vb76nyymeq-et.a.run.app/)
